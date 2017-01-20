@@ -281,6 +281,7 @@ h2 {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  opacity:0;
 }
 
 .main-header__logo {

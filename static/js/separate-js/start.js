@@ -93,6 +93,7 @@ $(window).scroll( function(){
 
 // Animation for header
 $(function() {
+    header = $('.main-header'),
     logo = $('.main-header__logo'),
     h3 = $('.main-header__h3'),
     h1 = $('.main-header__title h1'),
@@ -100,6 +101,7 @@ $(function() {
     tl = new TimelineMax();
 
     tl
+        .from(header, 1.5, { autoAlpha:0, ease:Power1.easeOut})
         .from(logo, 2, { autoAlpha:0, scale:.05, ease:Power1.easeOut})
         .from(logo, 1, { top:"60%", left:"40%", position:"absolute", ease:Power1.easeOut})
         .from(h1, 1, {autoAlpha:0, top:-150, ease:Power1.easeOut})
